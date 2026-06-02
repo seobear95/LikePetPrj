@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2단계: 좋아하는 고양이를 선택하세요"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/editCatName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="애완묘 이름 입력 예: 호호"
+            android:inputType="text"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="선호하는 고양이를 선택하세요!"/>
+
+        <Spinner
+            android:id="@+id/catSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/friendLevelText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="친화도를 선택하세요!"/>
+        <SeekBar
+            android:id="@+id/friendLevelSeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="5"
+            />
+
+
+        <CheckBox
+            android:id="@+id/CatCheckPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="매일 놀이 가능"/>
+
+        <CheckBox
+            android:id="@+id/CatCheckClean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="매일 화장실청소 가능"/>
+
+        <CheckBox
+            android:id="@+id/CatCheckEat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="매일 먹이주기 가능"/>
+
+        <Button
+            android:id="@+id/btnResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="최종 화면으로 이동"/>
+    </LinearLayout>
+</ScrollView>

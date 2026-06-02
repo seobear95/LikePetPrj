@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2단계: 좋아하는 고양이를 선택하세요"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/editCatName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="애완묘 이름 입력 예: 호호"
+            android:inputType="text"
+            android:layout_marginTop="12dp"/>
+
+        <RadioGroup
+            android:id="@+id/catRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+
+            <RadioButton
+                android:id="@+id/radioKorean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="코리앗숏헤어"
+                android:drawableStart="@drawable/cat_korean"
+                android:drawablePadding="12dp"
+                android:background="@drawable/choice_card_selector"
+                />
+
+            <RadioButton
+                android:id="@+id/radioPersian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="페르시안"
+                android:drawableStart="@drawable/cat_persian"
+                android:drawablePadding="12dp"
+                android:background="@drawable/choice_card_selector"
+                />
+
+            <RadioButton
+                android:id="@+id/radioRagdoll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/choice_card_selector"
+                android:drawableStart="@drawable/cat_ragdoll"
+                android:drawablePadding="12dp"
+                android:text="랙돌" />
+
+            <RadioButton
+                android:id="@+id/radioSiamese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="샴"
+                android:drawableStart="@drawable/cat_siamese"
+                android:drawablePadding="12dp"
+                android:background="@drawable/choice_card_selector"
+                />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/CatCheckPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="매일 놀이 가능"/>
+
+        <CheckBox
+            android:id="@+id/CatCheckClean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="매일 화장실청소 가능"/>
+
+        <CheckBox
+            android:id="@+id/CatCheckEat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="매일 먹이주기 가능"/>
+
+        <Button
+            android:id="@+id/btnResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="최종 화면으로 이동"/>
+    </LinearLayout>
+</ScrollView>
